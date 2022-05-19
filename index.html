@@ -25,7 +25,7 @@
         </p>
 
         <p>
-            What is the <a href="#content"> first thing </a> you need to work on ?
+            What is the <a id="content-show" href="#content" onclick="show(); return false"> first thing </a> you need to work on ?
         </p>
     </section>
 
@@ -35,4 +35,12 @@
 
     </section>
 </body>
+<script>
+    function show()
+    {
+        let a = document.getElementById('#content-show');
+        let content = document.getElementById('#content');
+            content.style.display = 'block';
+    }
+</script>
 </html>
